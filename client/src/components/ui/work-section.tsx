@@ -1,5 +1,7 @@
-import { Bot, FlaskRound, Globe, Eye, Heart, GraduationCap, ExternalLink, Github, FileText, Play, BarChart3, Download } from "lucide-react";
+import { Bot, FlaskRound, Globe, Eye, Heart, GraduationCap, ExternalLink, Github, FileText, Play, BarChart3, Download, Zap, Code, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import InteractiveProjectShowcase from "@/components/ui/interactive-project-showcase";
+import { useState } from "react";
 
 const projects = [
   {
@@ -92,53 +94,164 @@ const timeline = [
 ];
 
 export default function WorkSection() {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [viewMode, setViewMode] = useState<'3d' | 'grid'>('3d');
+
   return (
-    <section id="work" className="min-h-screen py-20 relative">
-      <div className="container mx-auto px-4">
+    <section id="work" className="min-h-screen py-20 relative overflow-hidden">
+      {/* Ambient effects */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="floating-orb w-40 h-40 top-5 left-5 animate-float shadow-2xl shadow-green-400/30" style={{animationDelay: '2s'}}></div>
+        <div className="floating-orb w-24 h-24 bottom-10 right-10 animate-float shadow-2xl shadow-purple-500/30" style={{animationDelay: '4s'}}></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="font-orbitron text-4xl md:text-6xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-green-400">
+          <h2 className="font-orbitron text-4xl md:text-6xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-green-400 animate-pulse-slow">
             PROJECT SHOWCASE
           </h2>
           
-          {/* Featured Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {projects.map((project) => (
-              <div key={project.id} className="project-card glassmorphism p-6 rounded-2xl group hover:scale-105 transition-all duration-300">
-                <img 
-                  src={project.image} 
-                  alt={project.description}
-                  className="w-full h-48 object-cover rounded-xl mb-4"
-                />
-                <div className="flex items-center mb-3">
-                  <project.icon className={`${project.color} text-2xl mr-3 w-6 h-6`} />
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                </div>
-                <p className="text-gray-300 text-sm mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech) => (
-                    <span key={tech} className={`text-xs bg-${project.color}/20 text-${project.color} px-2 py-1 rounded`}>
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex justify-between items-center">
-                  <div className="text-sm">
-                    <div className={`${project.color} font-semibold`}>{project.metrics.primary}</div>
-                    <div className="text-gray-400">{project.metrics.secondary}</div>
+          {/* Interactive View Toggle */}
+          <div className="flex justify-center mb-12">
+            <div className="glassmorphism p-1 rounded-full flex">
+              <button
+                onClick={() => setViewMode('3d')}
+                className={`px-6 py-3 rounded-full transition-all duration-300 flex items-center space-x-2 ${
+                  viewMode === '3d' 
+                    ? 'bg-gradient-to-r from-cyan-400 to-purple-500 text-white shadow-lg' 
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                <Zap className="w-4 h-4" />
+                <span className="font-semibold">3D Experience</span>
+              </button>
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`px-6 py-3 rounded-full transition-all duration-300 flex items-center space-x-2 ${
+                  viewMode === 'grid' 
+                    ? 'bg-gradient-to-r from-purple-500 to-green-400 text-white shadow-lg' 
+                    : 'text-gray-300 hover:text-white'
+                }`}
+              >
+                <Database className="w-4 h-4" />
+                <span className="font-semibold">Grid View</span>
+              </button>
+            </div>
+          </div>
+          
+          {/* Dynamic Content Based on View Mode */}
+          {viewMode === '3d' ? (
+            <div className="mb-16">
+              <InteractiveProjectShowcase 
+                className="w-full max-w-4xl mx-auto"
+                onProjectSelect={setSelectedProject}
+              />
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              {projects.map((project) => (
+                <div 
+                  key={project.id} 
+                  className={`project-card glassmorphism p-6 rounded-2xl group hover:scale-105 transition-all duration-300 cursor-pointer ${
+                    selectedProject?.id === project.id ? 'ring-2 ring-cyan-400 scale-105' : ''
+                  }`}
+                  onClick={() => setSelectedProject(selectedProject?.id === project.id ? null : project)}
+                >
+                  <img 
+                    src={project.image} 
+                    alt={project.description}
+                    className="w-full h-48 object-cover rounded-xl mb-4"
+                  />
+                  <div className="flex items-center mb-3">
+                    <project.icon className={`${project.color} text-2xl mr-3 w-6 h-6`} />
+                    <h3 className="text-xl font-bold">{project.title}</h3>
                   </div>
-                  <div className="flex space-x-2">
-                    {project.actions.map((Action, index) => (
-                      <Button key={index} size="sm" variant="ghost" className={`${project.color} hover:text-white transition-colors p-2`}>
-                        <Action className="w-4 h-4" />
-                      </Button>
+                  <p className="text-gray-300 text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech) => (
+                      <span key={tech} className={`text-xs glassmorphism px-2 py-1 rounded text-cyan-400`}>
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <div className="text-sm">
+                      <div className={`${project.color} font-semibold`}>{project.metrics.primary}</div>
+                      <div className="text-gray-400">{project.metrics.secondary}</div>
+                    </div>
+                    <div className="flex space-x-2">
+                      {project.actions.map((Action, index) => (
+                        <Button key={index} size="sm" variant="ghost" className={`${project.color} hover:text-white transition-colors p-2`}>
+                          <Action className="w-4 h-4" />
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Selected Project Details */}
+          {selectedProject && (
+            <div className="glassmorphism p-8 rounded-2xl mb-16 animate-fade-in border border-cyan-400/30">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 glassmorphism rounded-full">
+                    <selectedProject.icon className="w-8 h-8 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-white">{selectedProject.title}</h3>
+                    <p className="text-gray-400">{selectedProject.description}</p>
+                  </div>
+                </div>
+                <Button 
+                  variant="ghost" 
+                  onClick={() => setSelectedProject(null)}
+                  className="text-gray-400 hover:text-white"
+                >
+                  ×
+                </Button>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="glassmorphism p-4 rounded-lg">
+                  <h4 className="font-semibold text-cyan-400 mb-2">Technology Stack</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedProject.tech?.map((tech: string) => (
+                      <span key={tech} className="text-xs bg-cyan-400/20 text-cyan-400 px-2 py-1 rounded">
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </div>
+                
+                <div className="glassmorphism p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-400 mb-2">Impact Metrics</h4>
+                  <div className="space-y-1">
+                    <div className="text-sm text-white">{selectedProject.metrics?.primary}</div>
+                    <div className="text-xs text-gray-400">{selectedProject.metrics?.secondary}</div>
+                  </div>
+                </div>
+                
+                <div className="glassmorphism p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-400 mb-2">Quick Actions</h4>
+                  <div className="flex space-x-2">
+                    <Button size="sm" className="bg-gradient-to-r from-cyan-400 to-purple-500">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </Button>
+                    <Button size="sm" variant="outline" className="border-gray-600">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
           
           {/* Achievement Timeline */}
           <div className="glassmorphism p-8 rounded-2xl">

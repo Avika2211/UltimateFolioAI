@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Rocket, ServerCog, Leaf, Mail, Linkedin, Github, Calendar, Download, FileText } from "lucide-react";
+import { Rocket, ServerCog, Leaf, Mail, Linkedin, Github, Calendar, Download, FileText, MapPin, Clock, Globe, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,6 +24,8 @@ type ContactFormData = z.infer<typeof contactSchema>;
 export default function ContactSection() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [isFormVisible, setIsFormVisible] = useState(false);
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
@@ -34,6 +36,32 @@ export default function ContactSection() {
       message: ""
     }
   });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    // Intersection observer for form animation
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsFormVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const section = document.getElementById('contact');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      clearInterval(timer);
+      observer.disconnect();
+    };
+  }, []);
 
   const contactMutation = useMutation({
     mutationFn: async (data: ContactFormData) => {
@@ -61,17 +89,35 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="min-h-screen py-20 relative">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-orbitron text-4xl md:text-6xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">
+    <section id="contact" className="min-h-screen py-20 relative overflow-hidden">
+      {/* Enhanced ambient effects */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="floating-orb w-36 h-36 top-10 right-10 animate-float shadow-2xl shadow-green-400/40" style={{animationDelay: '1s'}}></div>
+        <div className="floating-orb w-28 h-28 bottom-20 left-10 animate-float shadow-2xl shadow-yellow-400/40" style={{animationDelay: '3s'}}></div>
+        <div className="floating-orb w-20 h-20 top-1/2 left-1/2 animate-float shadow-2xl shadow-cyan-400/40" style={{animationDelay: '5s'}}></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="font-orbitron text-4xl md:text-6xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-yellow-400 to-cyan-400 animate-pulse-slow">
             LET'S BUILD THE FUTURE
           </h2>
-          <p className="text-xl text-gray-300 mb-12">
-            Available for Summer 2025 AI/ML Internships
-          </p>
+          <div className="flex items-center justify-center space-x-8 mb-12">
+            <div className="glassmorphism px-6 py-3 rounded-full flex items-center space-x-3">
+              <Sparkles className="w-5 h-5 text-green-400 animate-pulse" />
+              <span className="text-lg font-semibold">Summer 2025 AI/ML Internships</span>
+            </div>
+            <div className="glassmorphism px-4 py-2 rounded-full flex items-center space-x-2">
+              <MapPin className="w-4 h-4 text-cyan-400" />
+              <span className="text-sm text-gray-300">Delhi, India</span>
+            </div>
+            <div className="glassmorphism px-4 py-2 rounded-full flex items-center space-x-2">
+              <Clock className="w-4 h-4 text-purple-400" />
+              <span className="text-sm text-gray-300">{currentTime.toLocaleTimeString()}</span>
+            </div>
+          </div>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-6">
               <div className="glassmorphism p-6 rounded-2xl">
