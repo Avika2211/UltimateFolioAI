@@ -23,7 +23,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-orbitron text-4xl md:text-6xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 animate-pulse-slow">
-            THE RESEARCHER
+            ABOUT ME
           </h2>
           
           {/* Interactive Tab Navigation */}
@@ -130,8 +130,8 @@ export default function AboutSection() {
                         <div className="text-sm text-gray-300">First undergraduate to develop production framework</div>
                       </div>
                       <div className="p-4 bg-gradient-to-r from-green-400/10 to-yellow-400/10 rounded-lg border border-green-400/30">
-                        <div className="font-semibold text-green-400">CBSE Board Topper</div>
-                        <div className="text-sm text-gray-300">99.2% - Delhi Region Excellence</div>
+                        <div className="font-semibold text-green-400">JSTSE Scholar</div>
+                        <div className="text-sm text-gray-300">Junior Science Talent Search Excellence</div>
                       </div>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function AboutSection() {
                   <Target className="mr-3" />CURRENT FOCUS
                 </h4>
                 <div className="space-y-2 text-gray-300">
-                  <div className="hover:text-green-400 transition-colors cursor-pointer">• DTU Computer Science (9.2/10 CGPA)</div>
+                  <div className="hover:text-green-400 transition-colors cursor-pointer">• DTU Computer Science Student</div>
                   <div className="hover:text-cyan-400 transition-colors cursor-pointer">• MIT CSAIL Research Fellow</div>
                   <div className="hover:text-purple-400 transition-colors cursor-pointer">• Cambridge Climate AI Researcher</div>
                   <div className="hover:text-yellow-400 transition-colors cursor-pointer">• Harvard Impact Challenge Winner</div>

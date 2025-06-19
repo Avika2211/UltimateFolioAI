@@ -6,6 +6,7 @@ import AboutSection from "@/components/ui/about-section";
 import WorkSection from "@/components/ui/work-section";
 import ContactSection from "@/components/ui/contact-section";
 import ScrollProgress from "@/components/ui/scroll-progress";
+import AIChatbot from "@/components/ui/ai-chatbot";
 
 export default function Home() {
   useEffect(() => {
@@ -45,10 +46,12 @@ export default function Home() {
         <ContactSection />
       </main>
       
+      <AIChatbot />
+      
       <footer className="py-8 border-t border-gray-800">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
-            © 2024 Avika Joshi. Designed with ❤️ and cutting-edge technology.
+            © 2024 Avika Joshi. Designed with cutting-edge technology.
           </p>
         </div>
       </footer>

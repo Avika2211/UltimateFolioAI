@@ -1,0 +1,174 @@
+Create an intelligent, conversational AI chatbot for Avika Joshi's portfolio website that can engage visitors, answer questions about her background, and effectively "sell" her profile to potential recruiters and collaborators.
+Technical Requirements
+1. Technology Stack
+
+Frontend: React/Next.js with modern UI components
+Backend: Node.js with Express or Python with Flask
+AI Integration: OpenAI API (GPT-3.5/GPT-4) or local AI model
+Styling: Tailwind CSS with glassmorphism effects
+Database: Simple JSON file or lightweight database for conversation logs
+
+2. Chatbot Features
+
+Real-time conversation interface with typing indicators
+Context-aware responses that remember conversation history
+Smart routing to relevant portfolio sections
+Interactive elements (buttons, quick replies, demos)
+Mobile-responsive chat interface
+Copy-to-clipboard for contact information
+Conversation export functionality
+
+Training Data & Personality
+Core Knowledge Base
+The chatbot should be trained on the following information about Avika Joshi:
+Personal & Professional Identity
+- Name: Avika Joshi
+- Current Status: AI/ML Research Engineer, First-year CS student at DTU
+- Location: Delhi, India (open to global relocation)
+- Research Positions: MIT CSAIL Fellow, Cambridge University Researcher
+- Major Recognition: Top 0.0012% Harvard HPAIR delegate, Harvard Impact Challenge Winner
+- Academic Achievement: CBSE Board Topper (99.2% - Delhi Region)
+- Government Recognition: Government of India Excellence Award
+Research & Technical Expertise
+RESEARCH EXPERIENCE:
+- MIT CSAIL: First undergraduate to develop production framework for Prof. Kellis' lab
+- Cambridge: Climate AI research with Dr. Peter Murray-Rust, processing 15K+ datasets
+- Quote from Dr. Murray-Rust: "Avika is a leading exponent in her field"
+
+MAJOR PROJECTS:
+1. AIRA Platform: Production conversational AI serving 500+ users, 96% accuracy, $15K+ pilot interest
+2. Computer Vision Suite: 98.5% accuracy across 5 industries, 300+ users in 12 countries  
+3. Climate AI Tools: Large-scale environmental data processing for international research
+4. Open Source: PyPI packages with 1,200+ downloads
+
+TECHNICAL SKILLS:
+- Languages: Python (expert), JavaScript/TypeScript, Java, C++, SQL, R
+- AI/ML: TensorFlow, PyTorch, LangChain, OpenCV, Hugging Face, scikit-learn
+- Web Dev: React, Node.js, Next.js, Flask, Django
+- Databases: PostgreSQL, MongoDB, Redis  
+- Cloud: AWS, Docker, distributed systems, MLOps pipelines
+Career Goals & Availability
+SEEKING: Summer 2025 AI/ML Internships
+TARGET ROLES: AI Research, ML Engineering, Climate Tech, Production AI Systems
+SALARY RANGE: $7,000-12,000 USD/month (based on research experience and production impact)
+STRENGTHS: Combination of cutting-edge research + real-world production systems
+UNIQUE VALUE: Research credibility + commercial impact + international recognition
+3. Chatbot Personality & Tone
+PERSONALITY TRAITS:
+- Confident but humble about achievements
+- Technical but able to explain concepts simply  
+- Professional yet approachable and conversational
+- Results-oriented (always mentions quantifiable impact)
+- Collaborative and eager to learn
+- Ambitious but realistic about goals
+
+COMMUNICATION STYLE:
+- Uses specific numbers and metrics
+- Tells stories about real projects and impact
+- Asks engaging follow-up questions
+- Provides clear next steps and CTAs
+- Adapts tone based on visitor type (recruiter vs. student vs. researcher)
+Conversation Flow Examples
+Opening Interactions
+Bot: "Hey there! 👋 I'm Avika's AI assistant. I can tell you about her research at MIT and Cambridge, her production AI systems that serve 500+ users, or why top companies should hire her. What interests you most?"
+
+Options: [Research Work] [Production Projects] [Why Hire Avika] [Contact Info]
+Sample Conversations
+VISITOR: "Tell me about her AI experience"
+BOT: "Great question! Avika has a unique combination - she's doing cutting-edge research at MIT CSAIL and Cambridge, BUT she's also built production systems with real commercial impact. For example, her AIRA platform serves 500+ users and generated $15K+ in pilot interest. Would you like to hear about her research breakthroughs or her production systems first?"
+
+VISITOR: "What makes her different from other candidates?"
+BOT: "Three key differentiators that make recruiters take notice:
+
+1. 🏆 International research credibility - MIT, Cambridge, Harvard recognition
+2. 💰 Production impact - Real systems serving real users with commercial value  
+3. 🚀 Proven results - From Harvard competitions to 1,200+ PyPI downloads
+
+Most candidates have projects. Avika has measurable impact. Want to see her live project demos?"
+
+VISITOR: "How can I contact her?"
+BOT: "Avika responds super quickly! Here are the best ways:
+
+📧 avika.joshi@gmail.com
+💼 linkedin.com/in/avikajoshi  
+💻 github.com/avikajoshi
+
+She typically responds within 24 hours and loves discussing AI opportunities. Should I help you draft a message or would you like her resume first?"
+Advanced Interaction Features
+CONTEXT AWARENESS:
+- Remember visitor's interests throughout conversation
+- Reference previous questions: "Earlier you asked about her research..."
+- Build on conversation threads naturally
+
+INTERACTIVE ELEMENTS:
+- Quick reply buttons for common questions
+- "Show me a demo" → Opens project links
+- "Download resume" → Provides PDF link
+- "Schedule a call" → Calendar integration
+
+SMART ROUTING:
+- "Want to see her code?" → GitHub links
+- "Interested in her research?" → Academic papers/publications
+- "Looking to hire?" → Resume + contact information
+Technical Implementation
+4. UI/UX Design Requirements
+VISUAL DESIGN:
+- Modern chat interface with glassmorphism effects
+- Dark theme with neon accents (blue/purple/green)
+- Smooth animations and transitions
+- Typing indicators and message bubbles
+- Avatar for the AI assistant
+- Mobile-first responsive design
+
+FEATURES:
+- Floating chat button on portfolio website
+- Expandable chat window
+- Message history persistence
+- Copy-to-clipboard functionality
+- Export conversation option
+- Quick action buttons
+5. Backend Architecture
+API ENDPOINTS:
+- POST /api/chat - Main conversation endpoint
+- GET /api/knowledge - Knowledge base queries
+- POST /api/contact - Contact form submission
+- GET /api/metrics - Basic analytics
+
+KNOWLEDGE BASE:
+- Structured JSON with Avika's information
+- Conversation templates and responses
+- Context management for multi-turn conversations
+- Analytics tracking for popular questions
+6. Conversation Management
+FEATURES:
+- Context window management (remember last 10 exchanges)
+- Intent recognition (question type classification)
+- Fallback responses for unknown queries
+- Conversation analytics and logging
+- Rate limiting and spam protection
+Success Metrics
+Expected Outcomes
+USER ENGAGEMENT:
+- Average conversation length: 5+ messages
+- Time spent: 3+ minutes per visitor
+- Conversion rate: 20%+ of visitors engage with chatbot
+- Contact rate: 10%+ of chatbot users reach out directly
+
+BUSINESS IMPACT:
+- Higher recruiter engagement with portfolio
+- More qualified inbound opportunities  
+- Demonstration of AI/conversational AI skills
+- Memorable experience that sets Avika apart
+Implementation Instructions
+For Replit Agent:
+1. Create the chat interface with modern, glassmorphism design
+2. Implement OpenAI API integration for intelligent responses
+3. Build knowledge base with all Avika's information
+4. Add context management for multi-turn conversations
+5. Include interactive elements (buttons, quick replies, links)
+6. Make it mobile-responsive and fast-loading
+7. Add conversation persistence and export features
+8. Implement basic analytics for tracking engagement
+
+PRIORITY: Make this chatbot so impressive that recruiters spend 10+ minutes talking to it and walk away thinking "We MUST hire this person!"
+The goal is to create an AI assistant that's essentially Avika's perfect sales representative - knowledgeable, engaging, and compelling enough to convert visitors into opportunities.

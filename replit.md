@@ -35,18 +35,23 @@ This is a sophisticated portfolio website for Avika Joshi, an AI/ML Research Eng
 - **API Endpoints**: 
   - `POST /api/contact` - Submit contact form
   - `GET /api/contacts` - Retrieve all contacts (admin)
+  - `POST /api/chat` - AI chatbot conversation endpoint
+  - `GET /api/chat/analytics` - Chatbot engagement analytics
 
 ### Interactive UI Elements
-- **Particle System**: Dynamic Three.js particle effects with mouse interaction
+- **Particle System**: Enhanced physics-based particle effects with 100+ particles and mouse interaction
+- **Three.js 3D Scenes**: Interactive geometric shapes with mouse-responsive animations
 - **Floating Navigation**: Smooth scrolling navigation with active section detection
 - **Scroll Progress**: Visual progress indicator for page scrolling
 - **Glassmorphism Effects**: Modern translucent UI components
+- **AI Chatbot**: Intelligent conversational assistant for visitor engagement
 
 ### Portfolio Sections
-- **Hero Section**: Animated typewriter effect with dynamic statistics counters
-- **About Section**: Research background with interactive skill visualization
-- **Work Section**: Project showcase with detailed technical descriptions
-- **Contact Section**: Professional contact form with validation and success handling
+- **Hero Section**: Dynamic typewriter cycling through roles, 3D holographic nameplate, animated stats
+- **About Section**: Tabbed interface with 3D skill orbs, achievements timeline, and research focus
+- **Work Section**: Interactive 3D project showcase with toggle between 3D and grid views
+- **Contact Section**: Enhanced form with real-time features and live clock display
+- **AI Chatbot**: Intelligent assistant with comprehensive knowledge base and conversation flows
 
 ## Data Flow
 
@@ -99,7 +104,20 @@ This is a sophisticated portfolio website for Avika Joshi, an AI/ML Research Eng
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+- June 19, 2025: Enhanced portfolio with cyberpunk dark theme and interactive 3D elements
+  - Implemented dynamic typewriter animation cycling through "AI/ML Engineer", "Full Stack Developer", "A Curious Problem Solver!"
+  - Added comprehensive Three.js 3D scenes with mouse-responsive geometric shapes and particle systems
+  - Created interactive 3D skill orbs component with hover/click interactions
+  - Built intelligent AI chatbot with comprehensive knowledge base about Avika's achievements
+  - Enhanced particle system with physics-based interactions and 100+ particles
+  - Added tabbed About section with research, skills, recognition, and vision tabs
+  - Implemented toggle between 3D and grid views for project showcase
+  - Updated achievements to include JSTSE Scholar recognition
+  - Removed GPA reference per user request
+  - Changed section title from "THE RESEARCHER" to "ABOUT ME"
+
 ## Changelog
 
-Changelog:
-- June 19, 2025. Initial setup
+- June 19, 2025: Initial setup and comprehensive feature implementation
