@@ -1,0 +1,240 @@
+Ultimate 3D AI/ML Portfolio Website Prompt for Replit Agent
+Project Overview
+Create an absolutely stunning, cutting-edge 3D interactive portfolio website for Avika Joshi - an exceptional AI/ML Research Engineer with credentials from MIT CSAIL, Cambridge University, and Harvard. This should be the most impressive portfolio website anyone has ever seen, combining Three.js 3D graphics, smooth animations, interactive elements, and modern web technologies.
+
+Core Requirements
+1. Visual Design Philosophy
+Ultra-modern aesthetic: Dark theme with neon accents (electric blue, purple, green)
+3D space environment: Floating elements, particle systems, galaxy/tech background
+Glassmorphism effects: Translucent cards with blur effects
+Smooth animations: Every interaction should feel buttery smooth
+Mobile-responsive: Perfect on all devices
+2. Technology Stack
+Frontend: Next.js 14 with TypeScript
+3D Graphics: Three.js or React Three Fiber
+Animations: Framer Motion for smooth transitions
+Styling: Tailwind CSS with custom 3D elements
+Icons: Lucide React for consistent iconography
+Particles: Interactive particle systems
+3. Website Structure & Content
+SECTION 1: HOME (Hero Section)
+3D Elements:
+
+Floating holographic nameplate "AVIKA JOSHI" in 3D space
+Rotating 3D geometric shapes (dodecahedron, torus) around the name
+Interactive particle system that responds to mouse movement
+Animated neural network connections in the background
+Content:
+
+AVIKA JOSHI
+AI/ML Research Engineer
+MIT CSAIL Fellow • Cambridge Researcher • Harvard Impact Winner
+
+🏆 Top 0.0012% Harvard HPAIR Delegate (83,000+ applicants)
+🔬 Research Fellow at MIT CSAIL & University of Cambridge  
+🚀 Production AI Systems serving 500+ concurrent users
+📦 1,200+ downloads on PyPI package
+💰 Generated $15K+ pilot interest with AIRA platform
+
+[Animated CTA Button: "Explore My Universe"] [CTA: "Download Resume"]
+Interactive Features:
+
+Hover effects on all elements
+Smooth parallax scrolling
+Typing animation for the title
+Stats counter animation
+Background changes based on scroll position
+SECTION 2: ABOUT (3D Profile)
+3D Elements:
+
+3D avatar or abstract representation
+Floating skill orbs in 3D space (Python, AI/ML, Research, etc.)
+Interactive timeline in 3D with major achievements
+Rotating knowledge graph showing connections between skills
+Content:
+
+THE RESEARCHER
+Building the Future of AI
+
+I'm an AI/ML Research Engineer with production experience at world's top institutions. 
+My work spans climate AI, conversational systems, and computer vision - with real-world 
+impact and recognition from global leaders.
+
+🧠 RESEARCH EXPERTISE
+- Climate AI & Environmental Modeling
+- Conversational AI & Natural Language Processing  
+- Computer Vision & Image Processing
+- MLOps & Production AI Systems
+
+🎯 CURRENT FOCUS
+- DTU Computer Science (9.2/10 CGPA)
+- MIT CSAIL Research Fellow 
+- Cambridge Climate AI Researcher
+- Harvard Impact Challenge Winner
+
+🌟 RECOGNITION
+- CBSE Board Topper (99.2% - Delhi Region)
+- Government of India Excellence Award
+- Multiple international research fellowships
+- Open source contributor (1,200+ package downloads)
+
+"Avika is a leading exponent in her field with exceptional technical skills"
+- Dr. Peter Murray-Rust, University of Cambridge
+Interactive Features:
+
+Clickable skill orbs that expand with details
+3D timeline navigation
+Animated statistics
+Floating testimonial cards
+SECTION 3: WORK (3D Project Showcase)
+3D Elements:
+
+Projects displayed as floating 3D cards in space
+Each project has its own mini 3D environment
+Interactive demos embedded in 3D frames
+Particle effects connecting related projects
+FEATURED PROJECTS:
+
+1. AIRA - Production Conversational AI Platform
+
+🤖 AIRA Platform
+Advanced conversational AI system serving 500+ concurrent users
+
+Tech Stack: Python, LangChain, RAG, Docker, AWS
+Impact: $15K+ pilot interest, 96% conversation accuracy
+Features: Multi-turn conversations, context awareness, production-ready
+
+[Live Demo] [GitHub] [Technical Deep-Dive]
+2. MIT CSAIL Research Framework
+
+🔬 MIT Production Framework  
+First undergraduate to develop production framework for Prof. Kellis' lab
+
+Tech Stack: Python, distributed systems, cloud computing
+Impact: Adopted by MIT research team, scalable infrastructure
+Innovation: Novel approach to research data processing
+
+[Research Paper] [Code Documentation] [MIT Recognition]
+3. Cambridge Climate AI
+
+🌍 Climate AI Research Platform
+Large-scale environmental data processing for climate modeling
+
+Tech Stack: Python, MLOps, 15K+ datasets, distributed computing
+Impact: International climate research contribution
+Scale: Processing petabytes of climate data
+
+[Research Publication] [Data Visualization] [Impact Report]
+4. SmartCV Suite
+
+👁️ Computer Vision Platform
+Multi-domain CV solution with 98.5% accuracy across 5 industries
+
+Tech Stack: OpenCV, Deep Learning, Flask, Docker
+Users: 300+ across 12 countries
+Performance: 25% faster processing, real-time inference
+
+[Live Demo] [Performance Metrics] [User Testimonials]
+5. Next-Level Project Ideas (Showcase Concepts):
+
+BioAI Medical Diagnostics
+
+🩺 BioAI Diagnostic System
+AI-powered medical image analysis with 97.8% diagnostic accuracy
+
+Tech Stack: TensorFlow, medical imaging, cloud deployment
+Innovation: Multi-modal analysis (X-ray, MRI, CT scans)
+Impact: Potential to revolutionize healthcare diagnostics
+
+[Demo] [Medical Validation] [Research Proposal]
+AutonomAI Simulator
+
+🚗 Self-Driving AI Simulator
+Full 3D autonomous vehicle simulation environment
+
+Tech Stack: Unity, Python, reinforcement learning, physics simulation
+Features: Real-world physics, traffic scenarios, AI training
+Innovation: Novel approach to autonomous vehicle testing
+
+[3D Demo] [Training Algorithms] [Performance Analysis]
+EduAI Personalized Tutor
+
+🎓 Emotion-Aware Learning Platform
+AI tutor that adapts to student emotions and learning patterns
+
+Tech Stack: Computer vision, NLP, emotion recognition, adaptive algorithms
+Innovation: Real-time emotion detection for personalized learning
+Impact: 40% improvement in learning outcomes
+
+[Interactive Demo] [Emotion Analytics] [Learning Metrics]
+SECTION 4: CONTACT (3D Communication Hub)
+3D Elements:
+
+Floating contact cards in 3D space
+Interactive AI chatbot (mini AIRA demo)
+Animated social media icons
+3D email/message portal
+Content:
+
+LET'S BUILD THE FUTURE TOGETHER
+
+🌟 Available for Summer 2025 AI/ML Internships
+🎯 Seeking roles in: AI Research, ML Engineering, Climate Tech
+📍 Location: Delhi, India (Open to relocation)
+
+CONNECT WITH ME:
+📧 avika.joshi@gmail.com
+💼 linkedin.com/in/avikajoshi  
+💻 github.com/avikajoshi
+📱 Available for immediate discussion
+
+"I'm passionate about building AI systems that solve real-world problems. 
+Let's discuss how I can contribute to your team's success."
+
+[Send Message] [Schedule Call] [Download Resume] [View Recommendations]
+Interactive Features:
+
+Live AI chatbot for instant responses
+Contact form with real-time validation
+Calendar integration for scheduling
+Social media integration
+Advanced Interactive Features
+1. AI-Powered Personalization
+Chatbot that answers questions about Avika's experience
+Dynamic content based on visitor behavior
+Personalized project recommendations
+2. Real-Time Data Integration
+Live GitHub contribution graph
+Real-time project metrics
+Dynamic testimonials and recommendations
+3. Easter Eggs & Games
+Hidden 3D mini-games
+Interactive puzzles related to AI/ML
+Achievement system for exploration
+4. Performance Optimization
+Lazy loading for 3D elements
+Progressive enhancement
+Optimized for all devices
+Technical Implementation Guidelines
+Performance Requirements
+Page load time: < 3 seconds
+Smooth 60fps animations
+Mobile-optimized 3D rendering
+Progressive web app capabilities
+Accessibility
+Keyboard navigation for all 3D elements
+Screen reader compatible
+High contrast mode option
+Reduced motion preferences
+SEO Optimization
+Meta tags for all sections
+Structured data markup
+Fast loading and crawlable
+Social media preview optimization
+Expected Outcome
+This portfolio should make every recruiter think: "Holy shit, how did she build this? We NEED to hire her immediately!"
+
+The combination of exceptional content, cutting-edge 3D visuals, and interactive features should position Avika as the most impressive candidate they've ever seen.
+
+Create something that's not just a portfolio, but an experience that showcases her as a visionary AI/ML engineer ready to build the future.
+
