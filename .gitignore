@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 node_modules
 dist
 .DS_Store
 server/public
 vite.config.ts.*
 *.tar.gz
+=======
+.vercel
+>>>>>>> b2dab38fe1e719bdc16f5a1c4df238b1b1ed3956
