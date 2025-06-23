@@ -74,23 +74,42 @@ const projects = [
 
 const timeline = [
   {
-    year: "2024",
-    title: "Harvard Impact Challenge Winner",
-    description: "Top 0.0012% of 83,000+ applicants",
-    color: "cyber-blue"
-  },
-  {
-    year: "2023",
-    title: "MIT CSAIL Research Fellowship",
-    description: "First undergraduate production framework",
+    year: "University of Cambridge",
+    title: "AI/ML + Data Science Intern",
+    description: "",
     color: "neon-purple"
   },
   {
-    year: "2023",
-    title: "Cambridge Climate AI Research",
-    description: "International research contribution",
+    year: "Massachusetts Institute of Technology- CSAIL",
+    title: "Research Fellow, Project Contributer and MIT Rising Scholar",
+    description: "",
+    color: "neon-pink"
+  },
+  {
+    year: "Stanford University Code in Place",
+    title: "Section Leader",
+    description: "",
+    color: "cyber-blue"
+  },
+  {
+    year: "Walford Capitals",
+    title: "Market Research Analyst => Project Manager(Heading VCS)",
+    description: "",
     color: "cyber-green"
+  },
+  {
+    year: "Harvard Project For Asian and International Relations",
+    title: "Top 0.0012%, Delegate=>Keynote Speaker=>Winner Harvard Impact Challenge",
+    description: "",
+    color: "cyber-blue"
+  },
+  {
+    year: "Uttarakhand Saanskitik Prasar Samiti",
+    title: "Anchor, Performer, Dancer: Youngest and first female to host Indian Republic Day'25 @ USPS",
+    description: "",
+    color: "cyber-blue"
   }
+
 ];
 
 export default function WorkSection() {
@@ -255,7 +274,7 @@ export default function WorkSection() {
           
           {/* Achievement Timeline */}
           <div className="glassmorphism p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-center mb-8 cyber-blue">Recognition Timeline</h3>
+            <h3 className="text-2xl font-bold text-center mb-8 cyber-blue">Work Experience</h3>
             <div className="relative">
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
               <div className="space-y-8">
@@ -271,6 +290,7 @@ export default function WorkSection() {
                         <div className="w-1/2 pl-8">
                           <div className="text-sm text-gray-400">{item.description}</div>
                         </div>
+                        
                       </>
                     ) : (
                       <>
