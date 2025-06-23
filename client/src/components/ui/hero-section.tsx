@@ -51,8 +51,8 @@ export default function HeroSection() {
       const counters = [
         { target: 0.0012, suffix: '%', duration: 2000 },
         { target: 500, suffix: '+', duration: 2000 },
-        { target: 1200, suffix: '+', duration: 2000 },
-        { target: 15, prefix: '$', suffix: 'K+', duration: 2000 }
+        { target: 5, suffix: '+', duration: 2000 },
+        { target: 20, suffix: 'X +', duration: 2000 }
       ];
 
       counters.forEach((counter, index) => {
@@ -165,23 +165,20 @@ export default function HeroSection() {
             <div className="text-xs text-gray-400">Concurrent Users</div>
           </div>
           <div className="glassmorphism p-4 rounded-xl text-center animate-slide-up" style={{animationDelay: '0.6s'}}>
-            <div ref={(el) => counterRefs.current[2] = el} className="text-2xl font-bold cyber-green">1,200+</div>
-            <div className="text-xs text-gray-400">PyPI Downloads</div>
+            <div ref={(el) => counterRefs.current[2] = el} className="text-2xl font-bold cyber-green">5+</div>
+            <div className="text-xs text-gray-400">Languages</div>
           </div>
           <div className="glassmorphism p-4 rounded-xl text-center animate-slide-up" style={{animationDelay: '0.8s'}}>
-            <div ref={(el) => counterRefs.current[3] = el} className="text-2xl font-bold electric-yellow">$15K+</div>
-            <div className="text-xs text-gray-400">Pilot Interest</div>
+            <div ref={(el) => counterRefs.current[3] = el} className="text-2xl font-bold electric-yellow">20x +</div>
+            <div className="text-xs text-gray-400">Olympiad Winner</div>
           </div>
         </div>
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gradient-to-r from-cyan-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-white hover:scale-105 transition-transform animate-glow">
-            Explore My Universe
-          </Button>
-          <Button variant="outline" className="glassmorphism px-8 py-4 rounded-full font-semibold hover:scale-105 transition-transform border-cyan-400">
-            Download Resume
-          </Button>
+          <a href= "/Avika Joshi CV.pdf" className="bg-gradient-to-r from-cyan-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-white hover:scale-105 transition-transform animate-glow">
+          Download Resume
+          </a>
         </div>
       </div>
       
