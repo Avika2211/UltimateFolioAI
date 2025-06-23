@@ -64,12 +64,6 @@ const KNOWLEDGE_BASE = {
       description: "Large-scale environmental data processing",
       metrics: "15K+ datasets, International research impact",
       tech: ["MLOps", "Distributed Computing", "Python"]
-    },
-    opensource: {
-      name: "Open Source Contributions",
-      description: "PyPI packages and research tools",
-      metrics: "1,200+ downloads",
-      tech: ["Python", "Research Tools"]
     }
   },
   skills: {
@@ -228,7 +222,7 @@ export default function AIChatbot() {
       };
     } else {
       return {
-        content: `Avika's project portfolio shows the full spectrum from research to production:\n\n💬 AIRA Platform - 500+ users, $15K+ pilot interest\n👁️ Computer Vision Suite - 98.5% accuracy, 5 industries\n🌍 Climate AI Tools - 15K+ datasets, international research\n📦 Open Source - 1,200+ PyPI downloads\n\nEach project has measurable impact and real users. This isn't theoretical work - it's proven commercial value.`,
+        content: `Avika's project portfolio shows the full spectrum from research to production:\n\n💬 AIRA Platform - 500+ users, $15K+ pilot interest\n👁️ Computer Vision Suite - 98.5% accuracy, 5 industries\n🌍 Climate AI Tools - 15K+ datasets, international research\n📦 Open Source and dedication \n\nEach project has measurable impact and real users. This isn't theoretical work - it's proven commercial value.`,
         quickReplies: ["AIRA Details", "Computer Vision", "Climate AI", "Open Source"],
         actions: [
           { label: "View All Projects", action: "all_projects", icon: ExternalLink }
@@ -244,7 +238,7 @@ export default function AIChatbot() {
     }));
 
     return {
-      content: `Three key differentiators that make Avika an exceptional hire:\n\n🏆 **Research Credibility** - MIT, Cambridge, Harvard recognition validates her as a serious researcher\n\n💰 **Production Impact** - Real systems serving 500+ users with $15K+ commercial value prove she can ship\n\n🚀 **Proven Results** - From Harvard competitions to 1,200+ downloads, she delivers measurable outcomes\n\nMost candidates have projects. Avika has measurable impact. Most have potential. Avika has proof.`,
+      content: `Three key differentiators that make Avika an exceptional hire:\n\n🏆 Research Credibility - MIT, Cambridge, Harvard recognition validates her as a serious researcher\n\n💰 Production Impact - Real systems serving 500+ users with $15K+ commercial value prove she can ship\n\n🚀 Proven Results - From Harvard competitions to 1,200+ downloads, she delivers measurable outcomes\n\nMost candidates have projects. Avika has measurable impact. Most have potential. Avika has proof.`,
       quickReplies: ["Technical Skills", "Availability", "Salary Range", "Contact Info"],
       actions: [
         { label: "Download Resume", action: "download_resume", icon: Download },
@@ -272,7 +266,7 @@ export default function AIChatbot() {
 
   const handleSkillsQuery = (query: string) => {
     return {
-      content: `Avika's technical skills span the full AI/ML stack:\n\n🐍 **Languages**: Python (expert), JavaScript/TypeScript, Java, C++\n🤖 **AI/ML**: TensorFlow, PyTorch, LangChain, OpenCV, Hugging Face\n🌐 **Web**: React, Node.js, Next.js, Flask, Django\n☁️ **Cloud**: AWS, Docker, distributed systems, MLOps\n🗄️ **Data**: PostgreSQL, MongoDB, Redis\n\nShe's not just theoretical - every skill is proven in production systems serving real users.`,
+      content: `Avika's technical skills span the full AI/ML stack:\n\n🐍 Languages: Python (expert), JavaScript/TypeScript, Java, C++\n🤖AI/ML: TensorFlow, PyTorch, LangChain, OpenCV, Hugging Face\n🌐 Web: React, Node.js, Next.js, Flask, Django\n☁️Cloud: AWS, Docker, distributed systems, MLOps\n🗄️ Data: PostgreSQL, MongoDB, Redis\n\nShe's not just theoretical - every skill is proven in production systems serving real users.`,
       quickReplies: ["Production Experience", "Certifications", "Learning Path", "Project Examples"],
       actions: [
         { label: "Skills Portfolio", action: "skills_portfolio", icon: ExternalLink }
