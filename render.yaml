@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ultimatefolio-backend
+    runtime: node
+    region: singapore
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # add your custom variables here
+    plan: free
