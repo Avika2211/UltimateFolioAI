@@ -105,12 +105,9 @@ export default function ContactSection() {
           <div className="flex items-center justify-center space-x-8 mb-12">
             <div className="glassmorphism px-6 py-3 rounded-full flex items-center space-x-3">
               <Sparkles className="w-5 h-5 text-green-400 animate-pulse" />
-              <span className="text-lg font-semibold">Summer 2025 AI/ML Internships</span>
+              <span className="text-lg font-semibold">Contact me!</span>
             </div>
-            <div className="glassmorphism px-4 py-2 rounded-full flex items-center space-x-2">
-              <MapPin className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-gray-300">Delhi, India</span>
-            </div>
+            
             <div className="glassmorphism px-4 py-2 rounded-full flex items-center space-x-2">
               <Clock className="w-4 h-4 text-purple-400" />
               <span className="text-sm text-gray-300">{currentTime.toLocaleTimeString()}</span>
@@ -130,7 +127,7 @@ export default function ContactSection() {
                     <ServerCog className="neon-purple mr-3 w-5 h-5" />ML Engineering Roles
                   </div>
                   <div className="flex items-center">
-                    <Leaf className="cyber-green mr-3 w-5 h-5" />Climate Tech Opportunities
+                    <Leaf className="cyber-green mr-3 w-5 h-5" />Full Stack/ Computer Vision or SWE Roles
                   </div>
                 </div>
               </div>
@@ -138,14 +135,14 @@ export default function ContactSection() {
               <div className="glassmorphism p-6 rounded-2xl">
                 <h3 className="text-xl font-bold mb-4 neon-purple">Connect</h3>
                 <div className="space-y-4">
-                  <a href="mailto:avika.joshi@gmail.com" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
-                    <Mail className="cyber-blue mr-3 w-5 h-5" />avika.joshi@gmail.com
+                  <a href="mailto:avikajoshi.dtu@gmail.com" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
+                    <Mail className="cyber-blue mr-3 w-5 h-5" />avikajoshi.dtu@gmail.com
                   </a>
-                  <a href="#" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
-                    <Linkedin className="cyber-blue mr-3 w-5 h-5" />linkedin.com/in/avikajoshi
+                  <a href="https://www.linkedin.com/in/avika-joshi-162782307/" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
+                    <Linkedin className="cyber-blue mr-3 w-5 h-5" />Linkedin
                   </a>
-                  <a href="#" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
-                    <Github className="cyber-blue mr-3 w-5 h-5" />github.com/avikajoshi
+                  <a href="https://www.github.com/Avika2211" className="flex items-center text-gray-300 hover:text-cyan-400 transition-colors">
+                    <Github className="cyber-blue mr-3 w-5 h-5" />github.com/Avika2211
                   </a>
                 </div>
               </div>
@@ -253,17 +250,9 @@ export default function ContactSection() {
           
           {/* Quick Actions */}
           <div className="flex flex-wrap justify-center gap-4 mt-12">
-            <Button variant="outline" className="glassmorphism px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform border-cyan-400">
-              <Calendar className="mr-2 w-4 h-4" />
-              Schedule Call
-            </Button>
             <Button variant="outline" className="glassmorphism px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform border-purple-500">
               <Download className="mr-2 w-4 h-4" />
-              Download Resume
-            </Button>
-            <Button variant="outline" className="glassmorphism px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform border-green-400">
-              <FileText className="mr-2 w-4 h-4" />
-              View Recommendations
+              See my Resume
             </Button>
           </div>
         </div>
