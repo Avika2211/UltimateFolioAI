@@ -238,7 +238,7 @@ export default function AIChatbot() {
     }));
 
     return {
-      content: `Three key differentiators that make Avika an exceptional hire:\n\n🏆 Research Credibility - MIT, Cambridge, Harvard recognition validates her as a serious researcher\n\n💰 Production Impact - Real systems serving 500+ users with $15K+ commercial value prove she can ship\n\n🚀 Proven Results - From Harvard competitions to 1,200+ downloads, she delivers measurable outcomes\n\nMost candidates have projects. Avika has measurable impact. Most have potential. Avika has proof.`,
+      content: `Three key differentiators that make Avika an exceptional hire:\n\n🏆 Research Credibility - MIT, Cambridge, Harvard recognition validates her as a serious researcher\n\n💰Production Impact - Real systems serving 500+ users with $15K+ commercial value prove she can ship\n\n🚀 Proven Results - From Harvard competitions to olympiads, she delivers measurable outcomes\n\nMost candidates have projects. Avika has measurable impact. Most have potential. Avika has proof.`,
       quickReplies: ["Technical Skills", "Availability", "Salary Range", "Contact Info"],
       actions: [
         { label: "Download Resume", action: "download_resume", icon: Download },
