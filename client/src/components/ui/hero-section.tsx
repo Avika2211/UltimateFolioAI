@@ -176,7 +176,7 @@ export default function HeroSection() {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href= "./Avika Joshi CV.pdf" className="bg-gradient-to-r from-cyan-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-white hover:scale-105 transition-transform animate-glow">
+          <a href= "/Avika Joshi CV.pdf" className="bg-gradient-to-r from-cyan-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-white hover:scale-105 transition-transform animate-glow">
           Download Resume
           </a>
         </div>
