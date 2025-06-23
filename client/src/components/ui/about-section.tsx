@@ -172,7 +172,7 @@ export default function AboutSection() {
                   <Target className="mr-3" />CURRENT FOCUS
                 </h4>
                 <div className="space-y-2 text-gray-300">
-                  <div className="hover:text-green-400 transition-colors cursor-pointer">• DTU Computer Science Student</div>
+                  <div className="hover:text-green-400 transition-colors cursor-pointer">• DTU BTech IT Student</div>
                   <div className="hover:text-cyan-400 transition-colors cursor-pointer">• MIT CSAIL Research Fellow</div>
                   <div className="hover:text-purple-400 transition-colors cursor-pointer">• Cambridge Climate AI Researcher</div>
                   <div className="hover:text-yellow-400 transition-colors cursor-pointer">• Harvard Impact Challenge Winner</div>
